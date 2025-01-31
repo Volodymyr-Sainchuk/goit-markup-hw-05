@@ -612,6 +612,7 @@ body {
 .button-modal:hover,
 .button-modal:focus {
   background-color: #404bbf;
+  border: none;
 }
 .close-modal {
   display: flex;
@@ -763,5 +764,5 @@ body {
   align-items: center;
 }
 .first-modal-label-div {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
