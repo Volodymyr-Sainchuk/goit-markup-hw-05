@@ -332,16 +332,6 @@
         </div>
       </section>
     </main>
-    <div class="backdrop">
-      <div class="modal">
-        <button class="button-modal">
-          <svg class="close-modal" width="8" height="8">
-            <use href="./images/icons.svg#icon-modal-button"></use>
-          </svg>
-        </button>
-        <p class="text-modal">Leave your contacts and we will call you back</p>
-      </div>
-    </div>
     <div class="footer-container">
       <footer class="footer">
         <div class="container footer-all-wrap">
@@ -385,8 +375,78 @@
               </li>
             </ul>
           </div>
+          <div class="footer-input-wrap">
+            <p class="footer-input-text">Subscribe</p>
+            <label class="moodal-form-input">
+              <div class="test-footer">
+                <input type="email" class="footer-input" name="footer-input" />
+                <div class="label-footer-btn">
+                  <button class="form-button-footer" type="submit">
+                    <span class="form-button-text-footer">Send</span>
+                  </button>
+                </div>
+              </div>
+            </label>
+          </div>
         </div>
       </footer>
+    </div>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="button-modal">
+          <svg class="close-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-button"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="moodal-form-input">
+            <span class="modal-imput-span">Name</span>
+            <div class="modal-input-wrap">
+              <input type="text" class="input-modal" name="username" />
+              <svg class="icon-modal">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="moodal-form-input">
+            <span class="modal-imput-span-second">Phone</span>
+            <div class="modal-input-wrap">
+              <input type="tel" class="input-modal" name="phone" />
+              <svg class="icon-modal">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="moodal-form-input">
+            <span class="modal-imput-span-second">Email</span>
+            <div class="modal-input-wrap">
+              <input type="email" class="input-modal" name="email" />
+              <svg class="icon-modal">
+                <use href="./images/icons.svg#icon-message"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="moodal-form-input">
+            <span class="modal-imput-span-second">Comment</span>
+            <div class="modal-input-wrap">
+              <textarea class="input-modal textarea-modal" name="text-input" placeholder="Text input"> </textarea>
+            </div>
+          </label>
+          <label class="moodal-form-input">
+            <div class="modal-input-wrap">
+              <input type="checkbox" class="checkbox-modal" name="policy" />
+              <label class="checkbox-text-modal"
+                ><span class="checkbox-text-modal-item"></span> I accept the terms and conditions of the
+                <a class="span-checkbox-modal" href="">Privacy Policy</a>
+              </label>
+            </div>
+          </label>
+          <div class="label-form-btn">
+            <button class="form-button" type="submit"><span class="form-button-text">Send</span></button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
