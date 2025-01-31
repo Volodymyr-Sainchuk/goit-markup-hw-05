@@ -640,6 +640,11 @@ body {
   background-color: #404bbf;
   border: none;
 }
+.button-modal:hover .close-modal,
+.button-modal:focus .close-modal {
+  fill: #ffffff;
+}
+
 .close-modal {
   display: flex;
   fill: #2e2f42;
@@ -684,6 +689,7 @@ body {
 }
 .modal-input-wrap {
   position: relative;
+  margin-bottom: 16px;
 }
 .input-modal {
   padding-left: 38px;
@@ -708,6 +714,9 @@ body {
 .input-modal:focus,
 .input-modal:focus-visible {
   border-color: #4d5ae5;
+}
+.input-modal:focus {
+  fill: #4d5ae5;
 }
 .modal-imput-span-second {
   display: block;
