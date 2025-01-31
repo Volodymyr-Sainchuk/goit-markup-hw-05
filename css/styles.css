@@ -749,9 +749,10 @@ body {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   margin-top: 10px;
+  color: #8e8f99;
 }
 .span-checkbox-modal {
   font-family: Roboto;
@@ -762,7 +763,12 @@ body {
 .checkbox-modal {
   overflow: hidden;
 }
-.checkbox-text-modal-item {
+.checkbox-modal:checked + .custom-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.checkbox-modal:checked .checkbox-text-modal-item {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -773,19 +779,23 @@ body {
   background-color: #2e2f42;
 }
 .form-button {
+  display: block;
   position: relative;
   min-width: 169px;
-  min-height: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10;
-  padding: 16px 32px 16px 32px;
-  background-color: #4d5ae5;
+  height: 56px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin: 24px 120px 24px 119px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 24px 96px 24px 119px;
 }
 .form-button-text {
   color: rgb(255, 255, 255);
@@ -810,4 +820,22 @@ body {
 .footer-form {
   display: flex;
   gap: 24px;
+}
+.checkbox-container {
+  margin-bottom: 24px;
+}
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.link-modal-checkbox {
+  color: #4d5ae5;
 }
